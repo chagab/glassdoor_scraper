@@ -24,6 +24,10 @@ class DatabaseHandler():
         with open("locations.json") as json_file:
             return json.load(json_file)["locations"]
 
+    def open(self, database_path) -> None:
+        self.database_path = database_path
+        self.db = pd.read_csv(self.database_path)
+
     def create(self, job_title, locations=None) -> None:
         if locations is None:
             self.locations = self.get_locations()
@@ -58,13 +62,13 @@ class DatabaseHandler():
 
     def fill(self, user_credential_path="user_credentials.json", headless=True) -> None:
         # check if there are empty rows in the database
-        db = pd.read_csv(self.database_path)
-        has_empty_cells = np.any(pd.isna(db['Job title']))
-        locations = db['City']
+        self.db = pd.read_csv(self.database_path)
+        has_empty_cells = np.any(pd.isna(self.db['Job title']))
+        locations = self.db['City']
 
         while has_empty_cells:
             # update the database after every crash
-            db = pd.read_csv(self.database_path)
+            self.db = pd.read_csv(self.database_path)
             with open(user_credential_path) as json_file:
                 user_credential = json.load(json_file)
                 bot = GlassdoorBot(
@@ -78,7 +82,7 @@ class DatabaseHandler():
                 for i, location in enumerate(locations):
 
                     # If the row is empty
-                    if pd.isna(db.at[i, 'Job title']):
+                    if pd.isna(self.db.at[i, 'Job title']):
                         description = self.job_title, location
                         salary_details = bot.get_salary_details(*description)
                         job_title, city, salary_range = salary_details
@@ -101,19 +105,22 @@ class DatabaseHandler():
                         mean_salary_usdy = np.mean(min_max)
 
                         # update the database
-                        db.at[i, 'Job title'] = job_title
-                        db.at[i, 'Min salary (local currency)'] = min_salary
-                        db.at[i, 'Max salary (local currency)'] = max_salary
-                        db.at[i, 'per'] = frequency
-                        db.at[i, 'Min salary (usd/y)'] = min_salary_usdy
-                        db.at[i, 'Max salary (usd/y)'] = max_salary_usdy
-                        db.at[i, 'Average salary (usd/y)'] = mean_salary_usdy
+                        self.db.at[i, 'Job title'] = job_title
+                        self.db.at[i,
+                                   'Min salary (local currency)'] = min_salary
+                        self.db.at[i,
+                                   'Max salary (local currency)'] = max_salary
+                        self.db.at[i, 'per'] = frequency
+                        self.db.at[i, 'Min salary (usd/y)'] = min_salary_usdy
+                        self.db.at[i, 'Max salary (usd/y)'] = max_salary_usdy
+                        self.db.at[i,
+                                   'Average salary (usd/y)'] = mean_salary_usdy
 
                         # save the database
-                        db.to_csv(self.database_path, index=False)
+                        self.db.to_csv(self.database_path, index=False)
 
                         # update the looping condition
-                        has_empty_cells = np.any(pd.isna(db['Job title']))
+                        has_empty_cells = np.any(pd.isna(self.db['Job title']))
 
             except TimeoutException:
                 bot.driver.close()
