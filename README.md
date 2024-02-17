@@ -12,16 +12,19 @@ All the salaries are converted in US dollar. If the result is empty, there are n
 
 # How to use the project 
 
-You need a glassdoor account to use the project. The first step is to create a <code>user_credentials.json</code> file storing your user credentials
+You need a glassdoor account to use the project.
+
+First, clone the project. Next, create a <code>user_credentials.json</code> file storing your Glassdoor account user credentials as follow
 
 ``` json
 {
     "email": "your.email@youremail.com",
-    "password": "your_password"
+    "password": "your_glassdoor_password"
 }
 ```
+It is important that this file is stored in the project folder with the correct name (more precisely <code>user_credentials.json</code>). The code will automatically load the user credentials from this file and will otherwise crash if it is stored somewhere else.
 
-and a <code>locations.json</code> file storing the location you want get salary information from
+Then create a <code>locations.json</code> file storing the location you want get salary information from
 
 ``` json
 {
@@ -33,6 +36,7 @@ and a <code>locations.json</code> file storing the location you want get salary 
     ]
 }
 ```
+Same as for the previous file, it is important that the file is stored in the project folder with the correct file name. 
 
 Then, in order to create a new database of salaries, run the following code
 
@@ -44,6 +48,8 @@ database.create(job_title=job_title)
 database.fill(headless=True)
 database.plot()
 ```
+
+This will create a <code>database</code> where a csv file named <code>database-your_job_title</code> will store the results.
 
 In order to open a already existing database, run the following code
 
