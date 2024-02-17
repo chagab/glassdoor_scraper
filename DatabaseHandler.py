@@ -158,7 +158,7 @@ class DatabaseHandler():
 
         profession = database['Job title'][0]
 
-        plt.close('all')
+        # plt.close('all')
 
         num_bar, _ = database.shape
         x = range(num_bar)

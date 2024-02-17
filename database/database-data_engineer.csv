@@ -4,96 +4,78 @@ Paris,Data Engineer,€45K,€60K,yr,48019.5,64025.99999999999,56022.75
 New York,Data Engineer,$112K,$174K,yr,112000.0,174000.0,143000.0
 Tokyo,Data Engineer,¥7M,¥10M,yr,46404.29893769025,66291.85562527178,56348.07728148102
 Singapore,Data Engineer,SGD10K,SGD22K,mo,88427.59477936607,194540.70851460533,141484.1516469857
-Dubai,Data Engineer,AED17K,AED49K,mo,0.0,0.0,0.0
 San Francisco,Data Engineer,$130K,$189K,yr,130000.0,189000.0,159500.0
 Barcelona,Data Engineer,€38K,€60K,yr,40549.8,64025.99999999999,52287.9
 Amsterdam,Data Engineer,€55K,€86K,yr,58690.5,91770.6,75230.54999999999
 Seoul,Data Engineer,₩55M,₩82M,yr,41861.087137935705,62411.075369285965,52136.08125361084
-Rome (Italy),Data Engineer,$103K,$152K,yr,103000.0,152000.0,127500.0
 Prague,Data Engineer,CZK89K,CZK206K,mo,46203.79469715397,106943.61469228896,76573.70469472147
-Madrid,Data Engineer,NT$885K,NT$1M,yr,0.0,0.0,0.0
 Berlin,Data Engineer,€65K,€84K,yr,69361.5,89636.4,79498.95
 Los Angeles,Data Engineer,$108K,$166K,yr,108000.0,166000.0,137000.0
 Chicago,Data Engineer,$102K,$149K,yr,102000.0,149000.0,125500.0
-Washington DC,,,,,,,
-Beijing,,,,,,,
-Istanbul,,,,,,,
-Dublin,,,,,,,
-"Vienna, Austria",,,,,,,
-Milan,,,,,,,
-Toronto,,,,,,,
-Boston,,,,,,,
-Abu Dhabi,,,,,,,
-Budapest,,,,,,,
-São Paulo,,,,,,,
-Riyadh,,,,,,,
-Stockholm,,,,,,,
-Munich,,,,,,,
-"Melbourne, Australia",,,,,,,
-Lisbon,,,,,,,
-Zürich,,,,,,,
-Seattle,,,,,,,
-Sydney,,,,,,,
-Doha,,,,,,,
-Brussels,,,,,,,
-San Jose,,,,,,,
-Bangkok,,,,,,,
-Warsaw,,,,,,,
-Copenhagen,,,,,,,
-Taipei,,,,,,,
-Austin,,,,,,,
-Oslo,,,,,,,
-Hong Kong,,,,,,,
-"Athens, Greece",,,,,,,
-Frankfurt,,,,,,,
-Vancouver,,,,,,,
-San Diego,,,,,,,
-Orlando,,,,,,,
-Helsinki,,,,,,,
-Miami,,,,,,,
-Buenos Aires,,,,,,,
-Hamburg,,,,,,,
-Brisbane,,,,,,,
-Kuwait,,,,,,,
-Las Vegas,,,,,,,
-Montreal,,,,,,,
-Glasgow,,,,,,,
-Shanghai,,,,,,,
-Rio de Janeiro,,,,,,,
-Auckland,,,,,,,
-Atlanta,,,,,,,
-Houston,,,,,,,
-Busan,,,,,,,
-Philadelphia,,,,,,,
-"Naples, Italy",,,,,,,
-Denver,,,,,,,
-Nashville,,,,,,,
-Manchester,,,,,,,
-Dallas,,,,,,,
-Liverpool,,,,,,,
-Minneapolis,,,,,,,
-Minsk,,,,,,,
-Lyon,,,,,,,
-Portland,,,,,,,
-Rotterdam,,,,,,,
-Bogotá,,,,,,,
-Kraków,,,,,,,
-"Valencia, Spain",,,,,,,
-Santiago,,,,,,,
-"Birmingham, UK",,,,,,,
-New Orleans,,,,,,,
-Bucharest,,,,,,,
-Leeds,,,,,,,
-Ottawa,,,,,,,
-Cologne,,,,,,,
-Charlotte,,,,,,,
-Calgary,,,,,,,
-Düsseldorf,,,,,,,
-Hanoi,,,,,,,
-Gothenburg,,,,,,,
-Bilbao,,,,,,,
-Baltimore,,,,,,,
-Geneva,,,,,,,
-Lausanne,,,,,,,
-Basel,,,,,,,
-Bern Switzerland,,,,,,,
+Washington DC,Data Engineer,$104K,$152K,yr,104000.0,152000.0,128000.0
+Istanbul,Data Engineer,TRY46K,TRY97K,mo,19360.04995809436,40824.45317250333,30092.251565298844
+Dublin,Data Engineer,€43K,€79K,yr,45885.3,84300.9,65093.09999999999
+"Vienna, Austria",Data Engineer,€52K,€74K,yr,55489.2,78965.4,67227.29999999999
+Milan,Data Engineer,€30K,€42K,yr,32013.0,44818.2,38415.6
+Toronto,Data Engineer,CA$81K,CA$123K,yr,58755.42111345251,89221.1950241316,73988.30806879204
+Boston,Data Engineer,$110K,$159K,yr,110000.0,159000.0,134500.0
+Budapest,Data Engineer,HUF947K,HUF2M,mo,31964.05820022141,67505.9307290843,49734.99446465286
+São Paulo,Data Engineer,R$14K,R$40K,mo,34388.245223663005,98252.12921046576,66320.18721706438
+Stockholm,Data Engineer,SEK50K,SEK168K,mo,54932.00634893397,184571.54133241816,119751.77384067606
+Munich,Data Engineer,€59K,€82K,yr,62958.9,87502.2,75230.54999999999
+"Melbourne, Australia",Data Engineer,A$95K,A$144K,yr,61098.42092574735,92612.34329797492,76855.38211186114
+Lisbon,Data Engineer,€28K,€45K,yr,29878.8,48019.5,38949.15
+Zürich,Data Engineer,CHF100K,CHF136K,yr,111167.8299822898,151188.24877591417,131178.039379102
+Seattle,Data Engineer,$119K,$174K,yr,119000.0,174000.0,146500.0
+Sydney,Data Engineer,A$100K,A$141K,yr,64314.12729026036,90682.91947926712,77498.52338476374
+Brussels,Data Engineer,€5K,€9K,mo,64026.0,115246.8,89636.4
+San Jose,Data Engineer,$132K,$187K,yr,132000.0,187000.0,159500.0
+Bangkok,Data Engineer,THB94K,THB249K,mo,31745.359601234275,84091.43128412057,57918.39544267742
+Warsaw,Data Engineer,PLN11K,PLN31K,mo,31543.432986227745,88895.12932482365,60219.28115552569
+Copenhagen,Data Engineer,DKK58K,DKK108K,mo,99584.55349959774,185433.3065164924,142508.93000804505
+Austin,Data Engineer,$104K,$150K,yr,104000.0,150000.0,127000.0
+Oslo,Data Engineer,NOK675K,NOK877K,yr,60374.04132266041,78441.53220736767,69407.78676501404
+"Athens, Greece",Data Engineer,€2K,€4K,mo,25610.4,51220.8,38415.6
+Frankfurt,Data Engineer,€53K,€78K,yr,56556.3,83233.79999999999,69895.04999999999
+Vancouver,Data Engineer,CA$84K,CA$137K,yr,60931.54782135817,99376.45299435795,80154.00040785805
+San Diego,Data Engineer,$104K,$147K,yr,104000.0,147000.0,125500.0
+Orlando,Data Engineer,$94K,$144K,yr,94000.0,144000.0,119000.0
+Helsinki,Data Engineer,€6K,€10K,mo,76831.2,128052.0,102441.6
+Miami,Data Engineer,$95K,$152K,yr,95000.0,152000.0,123500.0
+Hamburg,Data Engineer,€59K,€74K,yr,62958.9,78965.4,70962.15
+Brisbane,Data Engineer,A$102K,A$154K,yr,65600.40983606556,99043.75602700096,82322.08293153325
+Las Vegas,Data Engineer,$95K,$145K,yr,95000.0,145000.0,120000.0
+Montreal,Data Engineer,CA$79K,CA$113K,yr,57304.66997484875,81967.43933111276,69636.05465298076
+Glasgow,Data Engineer,£39K,£70K,yr,47827.2711601448,85843.82003102913,66835.54559558697
+Rio de Janeiro,Data Engineer,R$9K,R$32K,mo,22106.729072354792,78601.7033683726,50354.2162203637
+Atlanta,Data Engineer,$102K,$147K,yr,102000.0,147000.0,124500.0
+Houston,Data Engineer,$99K,$147K,yr,99000.0,147000.0,123000.0
+Busan,Data Engineer,€29K,€36K,yr,30945.9,38415.6,34680.75
+Philadelphia,Data Engineer,$98K,$143K,yr,98000.0,143000.0,120500.0
+Denver,Data Engineer,$104K,$148K,yr,104000.0,148000.0,126000.0
+Nashville,Data Engineer,$91K,$134K,yr,91000.0,134000.0,112500.0
+Manchester,Data Engineer,£37K,£58K,yr,45374.59058782968,71127.73659713843,58251.16359248405
+Dallas,Data Engineer,$102K,$146K,yr,102000.0,146000.0,124000.0
+Liverpool,Data Engineer,£38K,£56K,yr,46600.93087398724,68675.05602482331,57637.99344940527
+Minneapolis,Data Engineer,$102K,$144K,yr,102000.0,144000.0,123000.0
+Lyon,Data Engineer,€38K,€50K,yr,40549.8,53355.0,46952.4
+Portland,Data Engineer,$104K,$153K,yr,104000.0,153000.0,128500.0
+Rotterdam,Data Engineer,€47K,€65K,yr,50153.7,69361.5,59757.6
+Kraków,Data Engineer,PLN12K,PLN31K,mo,34411.01780315754,88895.12932482365,61653.07356399059
+"Valencia, Spain",Data Engineer,€28K,€49K,yr,29878.8,52287.9,41083.35
+"Birmingham, UK",Data Engineer,£34K,£59K,yr,41695.569729357005,72354.07688329597,57024.82330632649
+New Orleans,Data Engineer,$93K,$148K,yr,93000.0,148000.0,120500.0
+Bucharest,Data Engineer,RON12K,RON26K,mo,30939.7765025672,67036.18242222891,48987.979462398056
+Leeds,Data Engineer,£38K,£55K,yr,46600.93087398724,67448.71573866575,57024.82330632649
+Ottawa,Data Engineer,CA$80K,CA$111K,yr,58030.04554415063,80516.688192509,69273.36686832982
+Cologne,Data Engineer,€57K,€82K,yr,60824.7,87502.2,74163.45
+Charlotte,Data Engineer,$101K,$142K,yr,101000.0,142000.0,121500.0
+Calgary,Data Engineer,CA$71K,CA$115K,yr,51501.66542043368,83418.19046971653,67459.9279450751
+Düsseldorf,Data Engineer,€62K,€73K,yr,66160.2,77898.29999999999,72029.25
+Gothenburg,Data Engineer,SEK60K,SEK90K,mo,65918.40761872077,98877.61142808116,82398.00952340095
+Bilbao,Data Engineer,€28K,€42K,yr,29878.8,44818.2,37348.5
+Baltimore,Data Engineer,$98K,$143K,yr,98000.0,143000.0,120500.0
+Geneva,Data Engineer,CHF99K,CHF141K,yr,110056.15168246691,156746.64027502865,133401.39597874778
+Lausanne,Data Engineer,CHF95K,CHF128K,yr,105609.43848317533,142294.82237733097,123952.13043025315
+Basel,Data Engineer,CHF97K,CHF136K,yr,107832.79508282112,151188.24877591417,129510.52192936765
+Bern Switzerland,Data Engineer,CHF100K,CHF122K,yr,111167.82998228981,135624.75257839359,123396.2912803417
