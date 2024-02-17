@@ -1,6 +1,7 @@
 import os
 import csv
 import json
+import matplotlib
 import regex as re
 import numpy as np
 import pandas as pd
@@ -158,28 +159,36 @@ class DatabaseHandler():
 
         profession = database['Job title'][0]
 
-        # plt.close('all')
-
         num_bar, _ = database.shape
         x = range(num_bar)
 
-        plt.figure()
+        # TODO get screen height
+        # backend = matplotlib.get_backend()
+        # window = plt.get_current_fig_manager().window
+
+        # # TODO take all backend into account
+        # if backend == 'Qt5Agg':
+        #     screenheight = int(window.y() * 0.04)
+        # else:
+        #     screenheight = 15
+
+        plt.figure(figsize=(5, 10))
         plt.suptitle(f'{profession} salaries around the world')
-        plt.bar(
-            x, database['Max salary (usd/y)'],
+        plt.barh(
+            x, database['Max salary (usd/y)'].iloc[::-1],
             color='lightblue', label='max'
         )
-        plt.bar(
-            x, database['Min salary (usd/y)'],
+        plt.barh(
+            x, database['Min salary (usd/y)'].iloc[::-1],
             color='dodgerblue', label='min'
         )
         plt.plot(
-            x, database['Average salary (usd/y)'],
+            database['Average salary (usd/y)'].iloc[::-1], x,
             'ro-', label='average'
         )
-        plt.axhline(y=100e3, color='red')
+        plt.axvline(x=100e3, color='red')
         plt.legend()
-        plt.xticks(x, database['City'], rotation=90)
-        plt.ylabel('Salary (USD)')
+        plt.yticks(x, database['City'].iloc[::-1])
+        plt.xlabel('Salary (USD)')
         plt.tight_layout()
         plt.show()
