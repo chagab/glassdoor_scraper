@@ -8,7 +8,7 @@ Choose a job title you are interested in and input a list of locations as a [jso
 
 All the salaries are converted in US dollar. If the result is empty, there are no information about the job title at the given location on Glassdoor.
 
-*This code was tested in the US. In other regions of the world (Europe for instance), it crashes due to cookie preferences pop-ups.*
+*This code was tested in the US. In other regions of the world (Europe for instance), it crashes due to cookie preferences pop-ups that are not taken into account yet.*
 
 # How to use the project 
 
