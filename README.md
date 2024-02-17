@@ -4,7 +4,7 @@ Get salaries for a job title in various locations of the world.
 
 Choose a job title you are interested in and input a list of locations as a [json](https://docs.python.org/3/library/json.html) file to know how much this job pays over there. A [selenium](https://www.selenium.dev/) bot will automatically fetch the information from [Glassdoor](https://www.glassdoor.com/index.htm) and store the results in [csv](https://docs.python.org/3/library/csv.html) database. Finally, you can plot the results with [matplotlib](https://matplotlib.org/stable/) to determine where you can get the highest salary. 
 
-![Data_scientist](https://github.com/chagab/glassdoor_scraper/assets/28218716/0930c3f5-1458-4b7c-983e-b7d765356888)
+![data_scientist](https://github.com/chagab/glassdoor_scraper/assets/28218716/5096c8e5-6d8a-4d8e-bb3c-79496d35e809)
 
 All the salaries are converted in US dollar. If the result is empty, there are no information about the job title at the given location on Glassdoor.
 
