@@ -49,7 +49,9 @@ database.fill(headless=True)
 database.plot()
 ```
 
-This will create a <code>database</code> where a csv file named <code>database-your_job_title</code> will store the results.
+This will create a Chrome web browser page scraper that connect to your glassdoor account and fetch the required data. If you want to see the web page, you can change the <code>headless</code> argument to False. After a few fetches, glassdoor detects that the request is done by a bot which will close the browser and start a new one. 
+
+While browsing, the scraper will create a <code>database</code> folder where a csv file named <code>database-your_job_title.csv</code> will store the results.
 
 In order to open a already existing database, run the following code
 
